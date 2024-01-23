@@ -23,7 +23,7 @@ services:
             - .:/app
         ports:
             - 8000:8000
-        command: bash -c 'php laravel-e-commerce/artisan migrate && php laravel-e-commerce/artisan db:seed && php laravel-e-commerce/artisan serve --host 0.0.0.0 --port 8000'
+        command: bash -c 'cd laravel-e-commerce && composer install && php artisan migrate && php artisan db:seed && php artisan serve --host 0.0.0.0 --port 8000'
         networks:
             - webnet
         restart: unless-stopped
