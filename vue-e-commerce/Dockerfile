@@ -1,9 +1,9 @@
 FROM node:16
 RUN npm install -g http-server
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
+#COPY package*.json ./
 COPY . .
+#RUN npm install
 #RUN npm run build
-EXPOSE 8080
+#EXPOSE 8080
 #CMD [ "http-server", "dist" ]
