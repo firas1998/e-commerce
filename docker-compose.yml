@@ -9,7 +9,7 @@ services:
             - .:/app
         ports:
             - 8080:8080
-        command: bash -c 'cd vue-e-commerce && npm run serve'
+        command: bash -c 'cd vue-e-commerce && npm install && npm run serve'
         networks:
             - webnet
         restart: unless-stopped
