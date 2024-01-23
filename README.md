@@ -3,7 +3,7 @@
 ## Requirements
 
 -   Docker
--   docker-compose v3
+-   docker-compose
 -   Free ports required:
     -   8000 (backend)
     -   8080 (frontend)
